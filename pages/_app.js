@@ -1,4 +1,4 @@
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import "../styles/globals.css";
 
@@ -7,7 +7,9 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    setHistory((h) => [h[h.length - 1], router.pathname]);
+    if (typeof window !== "undefined") {
+      setHistory((h) => [...h, router.pathname]);
+    }
   }, [router]);
 
   return <Component history={history} {...pageProps} />;

@@ -26,7 +26,10 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Create a Birthday Wish</title>
-        <meta name="description" content="An app to generate birthday wishes :)" />
+        <meta
+          name="description"
+          content="An app to generate birthday wishes :)"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -74,25 +77,13 @@ export default function Home() {
             Crafted by{" "}
             <a
               className={styles.span}
-              href="https://github.com/gouravkhunger"
+              href="https://github.com/Shivam-Saini-SS"
               target="_blank"
               rel="noreferrer"
             >
-              Gourav
+              Shivam
             </a>
             .
-          </p>
-          <p className={styles.desc}>
-            Thanks to all the{" "}
-            <a
-              className={styles.span}
-              href="https://github.com/gouravkhunger/nextjs-birthday-wish/graphs/contributors"
-              target="_blank"
-              rel="noreferrer"
-            >
-              contributors
-            </a>
-            !
           </p>
         </div>
       </main>
